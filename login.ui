@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>453</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>453</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>453</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+}
+
+QLineEdit {
+    background-color: #424242;
+    color: #FFFFFF;
+    border: 1px solid #737373;
+    border-radius: 2px;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: #FFFFFF;
+    border: 1px solid #737373;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+QComboBox {
+    background-color: #424242;
+    color: #FFFFFF;
+    border: 1px solid #737373;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+}
+
+QLabel {
+    color: #FFFFFF;
+}
+
+QMenuBar {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+QMenuBar::item {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+QMenuBar::item:selected {
+    background-color: #4A4A4A;
+}
+
+QMenu {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+QMenu::item {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+QMenu::item:selected {
+    background-color: #4A4A4A;
+}
+
+QFrame {
+    background: transparent;
+}
+
+QHeaderView {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+QTableWidget {
+    alternate-background-color: #424242;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #333333;
+    border: 1px solid #737373;
+}
+QHeaderView::section {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 4px;
+    border: 1px solid #737373;
+}
+
+QTableWidget::item {
+    background-color: #424242;
+    color: #ffffff;
+}
+</string>
+  </property>
+  <widget class="QLineEdit" name="txtUsuario">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>130</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txtSenha">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>160</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labUsuario">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>130</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Usuário</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labSenha">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>160</y>
+     <width>49</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Senha</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnLogin">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>210</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labIncorreta">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>180</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: #FF0000; /
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>90</y>
+     <width>561</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> QWidget {
+        background-image: url('logos.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>80</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Login Techmark&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>logo</zorder>
+  <zorder>txtUsuario</zorder>
+  <zorder>txtSenha</zorder>
+  <zorder>labUsuario</zorder>
+  <zorder>labSenha</zorder>
+  <zorder>btnLogin</zorder>
+  <zorder>labIncorreta</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <resources>
+  <include location="source2.qrc"/>
+ </resources>
+ <connections/>
+</ui>

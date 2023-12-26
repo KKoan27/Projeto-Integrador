@@ -1,0 +1,2002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1030</width>
+    <height>918</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+    background-color: #2E2E2E;
+    color: #FFFFFF;
+}
+
+QLineEdit {
+    background-color: #424242;
+    color: #FFFFFF;
+    border: 1px solid #737373;
+    border-radius: 2px;
+}
+
+QPushButton {
+    background-color: #333333;
+    color: #FFFFFF;
+    border: 1px solid #737373;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+QComboBox {
+    background-color: #424242;
+    color: #FFFFFF;
+    border: 1px solid #737373;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+}
+
+QLabel {
+    color: #FFFFFF;
+}
+
+QMenuBar {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+QMenuBar::item {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+QMenuBar::item:selected {
+    background-color: #4A4A4A;
+}
+
+QMenu {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+QMenu::item {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+QMenu::item:selected {
+    background-color: #4A4A4A;
+}
+
+QFrame {
+    background: transparent;
+}
+
+QHeaderView {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+QTableWidget {
+    alternate-background-color: #424242;
+}
+
+QTableWidget QTableCornerButton::section {
+    background-color: #333333;
+    border: 1px solid #737373;
+}
+QHeaderView::section {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 4px;
+    border: 1px solid #737373;
+}
+
+QTableWidget::item {
+    background-color: #424242;
+    color: #ffffff;
+}
+QWidget:disabled {
+    background-color: #555555; 
+    color: #A0A0A0; 
+}
+
+QPushButton:disabled {
+    background-color: #444444;
+    color: #909090; 
+}
+
+QComboBox:disabled {
+    background-color: #555555;
+    color: #A0A0A0;
+}
+
+QLabel:disabled {
+    color: #A0A0A0;
+}
+QLineEdit:disabled {
+    background-color: #555555;
+    color: #A0A0A0;
+    border: 1px solid #737373;
+    border-radius: 2px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QFrame" name="Mainframe">
+      <property name="minimumSize">
+       <size>
+        <width>1012</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1012</width>
+        <height>900</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="toolframe">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>240</y>
+         <width>581</width>
+         <height>43</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPushButton" name="btnCadastro">
+          <property name="text">
+           <string>Cadastro</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnConsultas">
+          <property name="text">
+           <string>Consultas</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QFrame" name="InfoFrame">
+       <property name="geometry">
+        <rect>
+         <x>-820</x>
+         <y>340</y>
+         <width>1821</width>
+         <height>571</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>9</y>
+          <width>931</width>
+          <height>511</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labOp">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>530</y>
+          <width>931</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frameAluno">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>411</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtANome">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtARg">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>180</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtAMatricula">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtAIdade">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtACpf">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>150</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtAIdCurso">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>210</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labANome">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labAIdade">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Idade</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labAMatricula">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Matrícula</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labACpf">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>150</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labARg">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>180</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>RG</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labAIdCurso">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>210</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Id do curso</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="btnSave">
+        <property name="geometry">
+         <rect>
+          <x>1710</x>
+          <y>490</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Salvar</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frameCurso">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>431</width>
+          <height>741</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtCNome">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtCNMaterias">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtCDuracao">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labCNome">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labCDuracao">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Duração</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labCNMaterias">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>N° de matérias</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameContas">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>431</width>
+          <height>741</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtCoUser_2">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtCoNivel_2">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtCoSenha_2">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labCoUser_2">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Usuário</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labCoSenha_2">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Senha</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labCoNivel_2">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nível</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtCoIdFun">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>150</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labCoIdFun">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>150</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Id funcionário</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="btnCancel">
+        <property name="geometry">
+         <rect>
+          <x>1630</x>
+          <y>490</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Cancelar</string>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frameApp">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>431</width>
+          <height>741</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtAppNome">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtAppVers">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtAppEstado">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labAppNome">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labAppEstado">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Estado</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labAppVers">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Versão</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtAppVenc">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>150</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labAppVenc">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>150</y>
+           <width>111</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Vencimento Licença</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameComputadores">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>431</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtComNome">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtComSetor">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>180</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtComEstado">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtComConf">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtComSala">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>150</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labComNome">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labComConf">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Confiigurações</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labComEstado">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Estado</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labComSala">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>150</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Sala</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labComSetor">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>180</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Setor</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameFuncionarios">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>431</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtFunNome">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtFunSalario">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>180</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtFunRg">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtFunCpf">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtFunFun">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>150</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtFunSetor">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>210</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labFunNome">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labFunCpf">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labFunRg">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>RG</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labFunFun">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>150</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Função</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labFunSalario">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>180</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Salário</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labFunSetor">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>210</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Setor</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtFunLeciona">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>240</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labFunLeciona">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>240</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Leciona</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="framePacote_Internet">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>431</width>
+          <height>741</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtInterVeloci">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtInterEstado">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labInterVeloci">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Velocidade</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labInterEstado">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Estado</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameProjetor">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>431</width>
+          <height>741</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtProjEstado">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtProjLocal">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtProjModelo">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labProjEstado">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Estado</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labProjModelo">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Modelo</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labProjLocal">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Localização</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameSala_Lab">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>481</width>
+          <height>491</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtSalaAndar">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSalaReserva">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>180</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSalaTipo">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSalaNum">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSalaCap">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>150</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSalaQuantPC">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>210</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSalaAndar">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Andar</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSalaNum">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Número</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSalaTipo">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Tipo</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSalaCap">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>150</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Capacidade</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSalaReserva">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>180</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Reserva</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSalaQuantPC">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>210</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Quantidade PCs</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameServidor">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>441</width>
+          <height>741</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtServNome">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtServCap">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtServEstado">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labServNome">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labServEstado">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Estado</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labServCap">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Capacidade</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameSetor">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>441</width>
+          <height>741</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtSetorNome">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSetorNFun">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSetorAndar">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSetorNome">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSetorAndar">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Andar</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSetorNFun">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>N° Funcionários</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSetorNPcs">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>150</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSetorNPcs">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>150</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>N° PCs</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameSwitch">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>471</width>
+          <height>741</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtSwitchLocal">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtSwitchEstado">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSwitchLocal">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Localização</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labSwitchEstado">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Estado</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameWebsite">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>10</y>
+          <width>461</width>
+          <height>741</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLineEdit" name="txtWebNome">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>60</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtWebVers">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>120</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="txtWebEstado">
+         <property name="geometry">
+          <rect>
+           <x>160</x>
+           <y>90</y>
+           <width>181</width>
+           <height>20</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labWebNome">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labWebEstado">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>90</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Estado</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labWebVers">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>120</y>
+           <width>91</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Versão</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="btnLogout">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>530</y>
+          <width>71</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sair</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QComboBox" name="comboTabelas">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>290</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Aluno</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>App</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Computadores</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Contas</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Curso</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Funcionarios</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Pacote_Internet</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Projetor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sala_Lab</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Servidor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Setor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Switch</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Website</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="btnConsultar">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>289</y>
+         <width>136</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Consultar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnDelete">
+       <property name="geometry">
+        <rect>
+         <x>890</x>
+         <y>320</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Deletar</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnUpdate">
+       <property name="geometry">
+        <rect>
+         <x>803</x>
+         <y>320</y>
+         <width>81</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Editar</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="txtBusca">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>320</y>
+         <width>431</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkJoin">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>320</y>
+         <width>171</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Habilitar Consulta Relacionada</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboTabelasJoin2">
+       <property name="geometry">
+        <rect>
+         <x>323</x>
+         <y>290</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Aluno</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Computadores</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Contas</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Curso</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Funcionarios</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Projetor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sala_Lab</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Setor</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>-20</y>
+         <width>311</width>
+         <height>221</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"> QWidget {
+        background-image: url('logo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>300</x>
+         <y>210</y>
+         <width>411</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 14pt &quot;Ruda Black&quot;;</string>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt; Sistema de consulta e edição de cadastros&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
+       
+</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboTabelasJoin">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>290</y>
+         <width>131</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <item>
+        <property name="text">
+         <string>Aluno</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Computadores</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Contas</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Curso</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Funcionarios</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Projetor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Sala_Lab</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Setor</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="btnConsultarJoin">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>289</y>
+         <width>136</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Consultar</string>
+       </property>
+      </widget>
+      <zorder>label</zorder>
+      <zorder>toolframe</zorder>
+      <zorder>InfoFrame</zorder>
+      <zorder>comboTabelas</zorder>
+      <zorder>btnConsultar</zorder>
+      <zorder>btnDelete</zorder>
+      <zorder>btnUpdate</zorder>
+      <zorder>txtBusca</zorder>
+      <zorder>checkJoin</zorder>
+      <zorder>comboTabelasJoin2</zorder>
+      <zorder>label_2</zorder>
+      <zorder>comboTabelasJoin</zorder>
+      <zorder>btnConsultarJoin</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="source.qrc"/>
+ </resources>
+ <connections/>
+</ui>
